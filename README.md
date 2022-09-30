@@ -1,6 +1,6 @@
-# terceiro Trimestre
+# Terceiro Trimestre
 
 ## Identificação
-Matheus Henrique Bruder Pires N°: 24 1°: G
+Matheus Henrique Bruder Pires N°:24 1°:G
 
-##Conteúdo - HTML- CSS - JavaScript
+## Conteúdo - HTML - CSS - JavaScript
