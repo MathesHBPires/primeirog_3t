@@ -1,69 +1,48 @@
-function total() {
-  let c = document.getElementById("capital").value;
-  let j = document.getElementById("juros").value;
-  let t = document.getElementById("meses").value;
-  if (!Number(c)) {
-    alert("O valor do capital deve ser um número.");
-    document.getElementById("capital").value = "";
-    document.getElementById("capital").focus();
-    return
-  }
-  if (!Number(j)) {
-    alert("O valor dos juros deve ser um número.");
-    document.getElementById("juros").value = "";
-    document.getElementById("juros").focus();
-    return
-  }
-  if (!Number(t)) {
-    alert("A quantidade de meses deve ser um número.");
-    document.getElementById("meses").value = "";
-    document.getElementById("meses").focus();
-    return
-  }
-  let m = 0;
-  for (let i = 1; i <= t; i++) {
-    m = c * (1 + (j / 100));
-    //document.write("Valor no mês " + i + " = " + m + "<br>");
-    c = m;
-  }
-  document.getElementById("total").innerHTML = m;
-  //document.write("Montante:" + m);
+.calc {
+  background: rgb(66, 66, 66);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 5px 6px white
 }
-function soma() {
-  let val1 = document.getElementById("v1").value;
-  let val2 = document.getElementById("v2").value;
-  let r = Number(val1) + Number(val2);
-  document.getElementById(" resultado ").innerHTML = r;
-
+input {
+background: rgb(114, 114, 114);
+color: rgb(0, 0, 0);
+border-radius: 5px;
+padding: 5px;
 }
-
-
-
-function subtracao() {
-  let val1 = document.getElementById("v1").value;
-  let val2 = document.getElementById("v2").value;
-  let r = Number(val1) - Number(val2);
-  document.getElementById("resultado").innerHTML = r;
+.calc input:focus{
+  background: black;
+  color: yellow;
 }
-
-function divisao() {
-  let val1 = document.getElementById("v1").value;
-  let val2 = document.getElementById("v2").value;
-  let r = Number(val1) / Number(val2);
-  document.getElementById("resultado").innerHTML = r;
+#spTotal {
+background: rgb(0, 0, 0);
+color: aliceblue;
+border-radius: 10px;
+padding: 10px;
+margin-bottom: 12px;
 }
-
-function multiplicacao() {
-  let val1 = document.getElementById("v1").value;
-  let val2 = document.getElementById("v2").value;
-  let r = Number(val1) * Number(val2);
-  document.getElementById("resultado").innerHTML = r;
+.calc button {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
 }
-function porcentagem() {
-  let val1 = document.getElementById("v1").value;
-  let val2 = document.getElementById("v2").value;
-  let c = 100
-  let p = Number(val2) / Number(c)
-  let r = Number(val1) * Number(p);
-  document.getElementById("resultado").innerHTML = r;
+.calc button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  
+}
+#spLista {
+  text-align: start;
+  border-style: dashed;
+  border-color: yellow;
+  border-width: 1px;
+  border-radius: 4px;
+  background: rgb(245, 11, 11);
+  color: blueviolet;
 }
