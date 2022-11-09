@@ -5,7 +5,7 @@
   padding: 10px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 5px 6px white
+  box-shadow: 5px 6px rgb(4, 195, 253)
 }
 input {
 background: rgb(114, 114, 114);
@@ -45,4 +45,13 @@ margin-bottom: 12px;
   border-radius: 4px;
   background: rgb(245, 11, 11);
   color: blueviolet;
+}
+.calcF {
+  display: none;
+}
+#input-calcFin {
+  display: none;
+}
+#input-calcFin:checked + .calc .calcF{
+  display: block;
 }
